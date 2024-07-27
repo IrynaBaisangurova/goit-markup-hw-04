@@ -432,8 +432,6 @@ img {
 }
 .footer-icons {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: 16px;
 }
 .other:hover,
