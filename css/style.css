@@ -138,6 +138,7 @@ img {
   text-align: center;
   padding: 188px 0;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .title {
   max-width: 496px;
@@ -323,10 +324,12 @@ img {
   margin: 0;
   padding: 0;
 }
-.portfolio-items {
+.portfolio-items  {
   flex-basis: calc((100% - 48px) / 3);
   flex-shrink: 0;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 .portfolio-items-text {
   display: flex;
@@ -380,7 +383,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.box:hover .text-box {
+.portfolio-items:hover .text-box {
   transform: translateY(0);
 }
 
